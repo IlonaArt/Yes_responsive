@@ -164,10 +164,10 @@
 				</div>
 				<div class="scroll"></div>
 			</article>
-			<div class="test-lesson">
+			<div class="promotion">
 				<img src="" alt="">
-				<b class="test-headline">бесплатное пробное занятие</b>
-				<p class="test-lesson-text">Приходите на бесплатное первое занятие по теме "аэропорт" и ощутите пользу сразу!</p>
+				<b class="promo-headline">бесплатное пробное занятие</b>
+				<p class="promo-lesson-text">Приходите на бесплатное первое занятие по теме "аэропорт" и ощутите пользу сразу!</p>
 				<button class="registration" type="button" value="Записаться на пробное занятие">Записаться на пробное занятие</button>
 			</div>
 		</main>
@@ -197,8 +197,15 @@
 			<a class="order" href="#">Заказать звонок</a>
 		</footer>
 		<section class="modal">
-			
+			<b class="modal-lesson">пробное занятие</b>
+			<p class="modal-text">Оставьте свой номер телефона и наш оператор свяжется с вами для согласования даты занятия</p>
+			<form class="modal-form" name="form" action="https://echo.htmlacademy.ru" method="post">
+				<label class="visually-hidden" for="your-tel">Ваш номер телефона</label>
+				<input id="your-tel" type="tel" class="tel-number" placeholder="+7 (_ _ _) _ _ _ - _ _ _ - _ _ _ _" name="tel">
+				<button class="registration" type="submit" value="Записаться на пробное занятие">Записаться на пробное занятие</button>
+			</form>
 		</section>
+		<div class="modal-overlay"></div>
 	</div>	
 </body>
 </html>
