@@ -1,8 +1,8 @@
-@font-face {
+@font-face {	
 	font-family: "Gilroy";
 	font-style: normal;
 	font-weight: 400;
-	src: local("Gilroy"),
+	src: local("Gilroy light"),
 	url("../fonts/woff2/gilroy-light-webfont.woff2") format("woff2");
 }
 
@@ -10,6 +10,142 @@
 	font-family: "Gilroy";
 	font-style: normal;
 	font-weight: 700;
-	src: local("Gilroy"),
+	src: local("Gilroy extrabold"),
 	url("../fonts/woff2/gilroy-extrabold-webfont.woff2") format("woff2");
+}
+
+body {
+	margin: 0;
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	color: #141414;
+	background-color: #ffffff;
+}
+
+.wrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+html {
+  	box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+	box-sizing: inherit;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+ 	margin: -1px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0
+}
+
+p {
+	margin: 0;
+}
+
+h2 {
+	margin: 0;
+}
+
+a.order,
+a.vk-ref {
+	text-decoration: none;
+	color: #f5112c;
+	line-height: 24px;
+	cursor: pointer;
+	border-bottom: 1px solid #f5112c;
+}
+
+a.order:hover,
+a.vk-ref:hover {
+	color: #9711f5;
+	border-bottom: 1px solid #9711f5;
+}
+
+a.order:active,
+a.vk-ref:active {
+	color: #4c0a7b;
+	border-bottom: 1px solid #4c0a7b;
+}
+
+.address,
+.phone,
+.intro-text,
+.registration,
+.promo-lesson-text,
+.logo-text {
+	line-height: 24px;
+}
+
+.about-teachers-text {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.number,
+.result b  {
+	font-size: 48px;
+	color: #000000;
+}
+
+.number {
+	font-weight: 700;
+}
+
+.dot {
+	color: #f5112c;
+}
+
+.headline1 {
+	font-size: 34px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.headline {
+	font-size: 45px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.cost .cost-number {
+	color: #f5112c;
+}
+
+.registration {
+	border: 1px solid #f5112c;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #ffffff;
+	padding: 18px 30px;
+	background-color: #f5112c;
+	border-radius: 40px;
+	box-shadow: 0px 10px 18px 0px rgba(246, 27, 60, 0.55);
+	cursor: pointer;
+}
+
+.registration:hover {
+	background-color: #d50c24;
+	box-shadow: 0px 10px 18px 0px rgba(214, 13, 37, 0.55);
+}
+
+.registration:active {
+	padding: 19px 30px 17px 30px;
+	text-shadow: 1px 3px 0px rgba(0,0,0,0.5);
 }
