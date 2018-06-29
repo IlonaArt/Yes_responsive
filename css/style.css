@@ -26,12 +26,18 @@ body {
 }
 
 .wrapper {
-	max-width: 1920px;
+	position: relative;
+	width: 100%;
+    max-width: 1150px;
 	margin: 0 auto;
 }
 
 html {
   	box-sizing: border-box;
+}
+
+body {
+	position: relative;
 }
 
 *, 
@@ -60,6 +66,29 @@ p {
 
 h2 {
 	margin: 0;
+}
+
+body::after {
+	content: "";
+	position: absolute;
+	background-image: url("../img/english yes.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 352px;
+	top: 130px;
+	left: 0;
+}
+
+body::before {
+	content: "";
+	position: absolute;
+	width: 85px;
+	height: 85px;
+	border: 16px solid #2429ff;
+	border-radius: 50%; 
+	top: 361px;
+	left: 266px;
 }
 
 a.order,
@@ -113,8 +142,13 @@ a.vk-ref:active {
 
 .headline1 {
 	font-size: 34px;
+	line-height: 48px;
 	color: #000000;
 	text-transform: uppercase;
+}
+
+.headline2 {
+	line-height: 52px;
 }
 
 .headline {
@@ -136,16 +170,98 @@ a.vk-ref:active {
 	padding: 18px 30px;
 	background-color: #f5112c;
 	border-radius: 40px;
-	box-shadow: 0px 10px 18px 0px rgba(246, 27, 60, 0.55);
+	box-shadow: 0px 10px 18px 0px rgba(246, 27, 60, 0.50);
 	cursor: pointer;
 }
 
 .registration:hover {
 	background-color: #d50c24;
-	box-shadow: 0px 10px 18px 0px rgba(214, 13, 37, 0.55);
+	box-shadow: 0px 10px 18px 0px rgba(214, 13, 37, 0.50);
 }
 
 .registration:active {
 	padding: 19px 30px 17px 30px;
 	text-shadow: 1px 3px 0px rgba(0,0,0,0.5);
 }
+
+.main-header {
+	display: flex;
+	align-items: center;
+	padding-top: 30px;
+}
+
+.address-wrap {
+	display: flex;
+	margin-left: 404px;
+}
+
+.address {
+	margin-right: 33px;
+}
+
+.phone {
+	margin-right: 40px;
+}
+
+.intro-section {
+	position: relative;
+	min-height: 794px;
+	display: flex;
+    flex-direction: row-reverse;
+}
+
+.intro-section::before {
+	content: "";
+	position: absolute;
+	background-color: #2429ff;
+	width: 23px;
+	height: 23px;
+	border: 1px solid #2429ff;
+	border-radius: 50%; 
+	right: 100px;
+    top: 114px;
+}
+
+.intro-image {
+	position: absolute;
+    background-image: url("../img/bus.png");
+	background-repeat: no-repeat;
+    z-index: 10;
+	left: 0;
+	bottom: 64px;
+}
+
+.intro-wrap {
+	position: relative;
+    max-width: 520px;
+    padding-top: 220px;
+}
+
+.intro-wrap::before {
+	content: "";
+	position: absolute;
+	background-image: url(../img/wave1.png);
+	width: 145px;
+	height: 19px;
+	bottom: 265px;
+    right: 33px;
+}
+
+.intro-text {
+	padding-bottom: 100px;
+}
+
+.headline-wrap {
+	padding-bottom: 48px;
+}
+
+.headline-wrap::after {
+	content: "";
+	position: absolute;
+	width: 62px;
+	height: 7px;
+	background-color: #f5112c;
+	top: 174px;
+	left: 0;
+}
+
