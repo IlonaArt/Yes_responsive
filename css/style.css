@@ -87,8 +87,9 @@ body::before {
 	height: 85px;
 	border: 16px solid #2429ff;
 	border-radius: 50%; 
-	top: 361px;
-	left: 266px;
+	top: 365px;
+    left: 264px;
+	z-index: 11;
 }
 
 a.order,
@@ -224,11 +225,9 @@ a.vk-ref:active {
 
 .intro-image {
 	position: absolute;
-    background-image: url("../img/bus.png");
-	background-repeat: no-repeat;
     z-index: 10;
-	left: 0;
 	bottom: 64px;
+	left: 0;
 }
 
 .intro-wrap {
@@ -252,7 +251,7 @@ a.vk-ref:active {
 }
 
 .headline-wrap {
-	padding-bottom: 48px;
+	padding-bottom: 55px;
 }
 
 .headline-wrap::after {
@@ -261,7 +260,11 @@ a.vk-ref:active {
 	width: 62px;
 	height: 7px;
 	background-color: #f5112c;
-	top: 174px;
+	bottom: 388px;
 	left: 0;
+}
+
+.modal {
+	display: none;
 }
 

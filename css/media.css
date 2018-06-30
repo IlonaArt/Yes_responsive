@@ -1,5 +1,126 @@
+          /*tablet */
 @media screen and (max-width: 1300px) {
+	body {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	body::after {
+		height: 261px;
+		width: 1300px;
+		top: 144px;
+	}
+
+	body::before {
+		top: 270px;
+    	left: 87px;
+	}
+
 	.wrapper {
-		max-width: 735px;
+		max-width: 742px;
+	}
+
+	.main-header {
+		align-items: flex-start;
+	}
+
+	.address-wrap {
+		margin-left: 115px;
+	}
+
+	.logo {
+		width: 63px;
+		height: 23px;
+	}
+
+	.address {
+		margin-right: 28px;
+	}
+
+	.phone {
+		margin-right: 26px;
+	}
+
+	.intro-image {
+		left: -78px;
+	    height: 488px;
+	    width: 365px;
+	    top: -38px;
+	}
+
+	.headline {
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	.headline1 {
+		font-size: 24px;
+		line-height: 38px;
+	}
+
+	.intro-section::before {
+		right: 139px;
+    	top: 56px;
+	}
+
+	.intro-wrap {
+		max-width: 364px;
+	    padding-top: 106px;
+	    right: 64px;
+	}
+
+	.intro-wrap::before {
+		bottom: 438px;
+    	right: -89px;
+	}
+
+	.intro-text {
+    	padding-bottom: 72px;
+	}	
+
+	.headline-wrap {
+    	padding-bottom: 40px;
+	}
+
+	.headline-wrap::after {
+		top: 237px;
+	}
+
+	.registration {
+		font-size: 14px;
+		padding: 16px 26px;
+	}
+
+}
+
+           /* mobile */
+@media screen and (max-width: 320px) {
+	body {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	body::after {
+		display: none;
+	}
+
+	.wrapper {
+   		max-width: 320px;
+   		padding: 22px 14px 0 14px;
+	    overflow: auto;
+	    margin: auto;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	}
+
+	.intro-image {
+		width: 243px;
+		height: 326px;
+	}
+
+	.address {
+		display: none;
 	}
 }
