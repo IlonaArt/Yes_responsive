@@ -177,7 +177,17 @@
 				<button class="registration" type="button" value="Записаться на пробное занятие">Записаться на пробное занятие</button>
 			</div>
 		</main>
-		<footer>
+		<section class="modal">
+			<b class="modal-lesson">пробное занятие</b>
+			<p class="modal-text">Оставьте свой номер телефона и наш оператор свяжется с вами для согласования даты занятия</p>
+			<form class="modal-form" name="form" action="https://echo.htmlacademy.ru" method="post">
+				<label class="visually-hidden" for="your-tel">Ваш номер телефона</label>
+				<input id="your-tel" type="tel" class="tel-number" placeholder="+7 (_ _ _) _ _ _ - _ _ _ - _ _ _ _" name="tel">
+				<button class="registration" type="submit" value="Записаться на пробное занятие">Записаться на пробное занятие</button>
+			</form>
+		</section>
+		<div class="modal-overlay"></div>
+		<footer class="main-footer">
 			<img class="logo" src="" width="" height="" alt="Yes">
 			<p class="logo-text">Школа Английского Языка</p>
 			<p class="address">г. Москва ул. Северная, 35</p>
@@ -206,16 +216,6 @@
 			<p class="phone">+7 (495) 46-54-67</p>
 			<a class="order" href="#">Заказать звонок</a>
 		</footer>
-		<section class="modal">
-			<b class="modal-lesson">пробное занятие</b>
-			<p class="modal-text">Оставьте свой номер телефона и наш оператор свяжется с вами для согласования даты занятия</p>
-			<form class="modal-form" name="form" action="https://echo.htmlacademy.ru" method="post">
-				<label class="visually-hidden" for="your-tel">Ваш номер телефона</label>
-				<input id="your-tel" type="tel" class="tel-number" placeholder="+7 (_ _ _) _ _ _ - _ _ _ - _ _ _ _" name="tel">
-				<button class="registration" type="submit" value="Записаться на пробное занятие">Записаться на пробное занятие</button>
-			</form>
-		</section>
-		<div class="modal-overlay"></div>
 	</div>	
 </body>
 </html>

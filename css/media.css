@@ -1,5 +1,5 @@
           /*tablet */
-@media screen and (max-width: 1300px) {
+@media (min-width: 700px) and (max-width: 1300px) {
 	body {
 		font-size: 16px;
 		line-height: 24px;
@@ -22,10 +22,6 @@
 
 	.main-header {
 		align-items: flex-start;
-	}
-
-	.address-wrap {
-		margin-left: 115px;
 	}
 
 	.logo {
@@ -93,8 +89,8 @@
 
 }
 
-           /* mobile */
-@media (min-width: 320px) and (max-width: 1299px) {
+
+@media (min-width: 320px) and (max-width: 699px) {
 	body {
 		font-size: 14px;
 		line-height: 18px;
@@ -108,27 +104,24 @@
 		width: 50px;
 		height: 50px;
 		border: 9px solid #2429ff;
-		top: 285px;
+		top: 311px;
 		left: 28px;
 	}
 
 	.wrapper {
-   		max-width: 320px;
-   		padding: 22px 14px 0 14px;
-	    overflow: auto;
-	    top: 0;
-	    left: 0;
-	    bottom: 0;
-	    right: 0;
-	}
-
-	.main-header {
-		padding: 0;
+   		padding: 22px 15px 0 15px;
+	    overflow: auto;	
+	    height: 100%; 
+	    margin: 0 auto;
 	}
 
 	.address-wrap {
-		display: block;
-		margin-left: 118px;
+		flex-direction: column;
+	}
+
+	.logo {
+		width: 63px;
+		height: 23px;
 	}
 
 	.intro-image {
@@ -152,6 +145,7 @@
 
 	.intro-section {
 		min-height: 0;
+		justify-content: center;
 	}
 
 	.intro-wrap {
