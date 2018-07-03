@@ -1,23 +1,18 @@
-          /*tablet */
-@media (min-width: 700px) and (max-width: 1300px) {
+          
+@media (max-width: 1300px) {
 	body {
-		font-size: 16px;
+		font-size: 14px;
 		line-height: 24px;
 	}
 
 	body::after {
 		height: 261px;
-		width: 1300px;
+		width: 100%;
 		top: 144px;
 	}
 
-	body::before {
-		top: 270px;
-    	left: 87px;
-	}
-
 	.wrapper {
-		max-width: 742px;
+		max-width: 58%;
 	}
 
 	.main-header {
@@ -50,7 +45,7 @@
 	}
 
 	.headline1 {
-		font-size: 24px;
+		font-size: 1.500em;
 		line-height: 38px;
 	}
 
@@ -59,8 +54,13 @@
     	top: 56px;
 	}
 
+	.intro-section::after {
+		top: 204px;
+    	left: -200px;
+	}
+
 	.intro-wrap {
-		max-width: 364px;
+		max-width: 48%;
 	    padding-top: 106px;
 	    right: 64px;
 	}
@@ -83,14 +83,101 @@
 	}
 
 	.registration {
-		font-size: 14px;
+		font-size: 0.875em;
 		padding: 16px 26px;
 	}
 
 }
 
+@media (min-width: 1024px) and (max-width: 1199px) {
+	.wrapper {
+		max-width: 800px;
+	}
 
-@media (min-width: 320px) and (max-width: 699px) {
+	.headline {
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	.headline1 {
+		font-size: 1.500em;
+		line-height: 38px;
+	}
+
+	.intro-section::after {
+    	left: -126px
+	}
+
+	.intro-wrap::before {
+    	right: -44px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.wrapper {
+    	max-width: 755px;
+	}
+
+	.main-header {
+		padding-left: 30px;
+	}
+
+	.logo {
+		width: 63px;
+		height: 23px;
+	}
+
+	.address {
+		display: none;
+	}
+
+	.headline1 {
+		font-size: 1.125em;
+    	line-height: 24px;
+	}
+
+	.headline-wrap {
+    	padding-bottom: 46px;
+	}
+
+	.intro-image {
+		width: 365px;
+	    height: 488px;
+	    left: -3px;
+	    top: -28px;
+	}
+
+	.headline, .headline2 {
+		font-size: 1.500em;
+	    line-height: 30px;	
+	}
+
+	.intro-wrap {
+		padding-top: 120px;
+		right: 30px;
+	}
+
+	.intro-wrap::before {
+		display: none;
+	}
+
+	.intro-section::after {
+		top: 242px;
+    	left: -68px;
+	}
+
+	.intro-text {
+		min-width: 400px;
+		padding-bottom: 80px;
+	}
+
+	.headline-wrap::after {
+		top: 230px;
+	}
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
 	body {
 		font-size: 14px;
 		line-height: 18px;
@@ -98,14 +185,6 @@
 
 	body::after {
 		display: none;
-	}
-
-	body::before {
-		width: 50px;
-		height: 50px;
-		border: 9px solid #2429ff;
-		top: 311px;
-		left: 28px;
 	}
 
 	.wrapper {
@@ -130,7 +209,7 @@
 		right: 0;
 	    left: 0;
 	    top: 0;
-	    bottom: 254px;
+	    bottom: 279px;
 	    margin: auto;
 	}
 
@@ -148,13 +227,22 @@
 		justify-content: center;
 	}
 
+	.intro-section::after {
+		width: 50px;
+		height: 50px;
+		border: 9px solid #2429ff;
+	    top: 214px;
+    	left: 19px;
+	}
+
 	.intro-wrap {
 	    display: flex;
 	    flex-direction: column;
 	    align-items: center;
 	    right: 0;
 	    top: 0;
-	    padding-top: 318px;
+	    padding-top: 302px;
+    	max-width: 278px;
 	}
 
 	.headline-wrap {
@@ -164,18 +252,18 @@
 	}
 
 	.headline-wrap::after {
-	    top: 415px;
+	    top: 398px;
 	    left: 50%;
     	transform: translateX(-50%);
 	}
 
 	.headline1 {
-		font-size: 18px;
+		font-size: 1.125em;
     	line-height: 24px;
 	}
 
-	.headline2 {
-		font-size: 24px;
+	.headline, .headline2 {
+		font-size: 1.500em;
 	    line-height: 30px;	
 	}
 
@@ -193,4 +281,10 @@
 	.intro-section::before {
 	    right: 16px;
 	    top: 40px;
+	}
+
+	.registration {
+		font-size: 0.875em;
+		padding: 16px 26px;
+	}
 }

@@ -27,7 +27,7 @@ body {
 
 .wrapper {
 	position: relative;
-    max-width: 1150px;
+    max-width: 1170px;
 	margin: 0 auto;
 	height: 100%;
 	min-width: 320px;
@@ -86,18 +86,6 @@ body::after {
 	left: 0;
 }
 
-body::before {
-	content: "";
-	position: absolute;
-	width: 85px;
-	height: 85px;
-	border: 16px solid #2429ff;
-	border-radius: 50%; 
-	top: 365px;
-    left: 264px;
-	z-index: 11;
-}
-
 a.order,
 a.vk-ref {
 	text-decoration: none;
@@ -129,13 +117,13 @@ a.vk-ref:active {
 }
 
 .about-teachers-text {
-	font-size: 14px;
+	font-size: 0.78em;
 	line-height: 24px;
 }
 
 .number,
 .result b  {
-	font-size: 48px;
+	font-size: 2.67em;
 	color: #000000;
 }
 
@@ -148,7 +136,7 @@ a.vk-ref:active {
 }
 
 .headline1 {
-	font-size: 34px;
+	font-size: 1.89em;
 	line-height: 48px;
 	color: #000000;
 	text-transform: uppercase;
@@ -159,7 +147,7 @@ a.vk-ref:active {
 }
 
 .headline {
-	font-size: 45px;
+	font-size: 2.5em;
 	color: #000000;
 	text-transform: uppercase;
 }
@@ -170,7 +158,6 @@ a.vk-ref:active {
 
 .registration {
 	border: 1px solid #f5112c;
-	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
 	color: #ffffff;
@@ -203,11 +190,11 @@ a.vk-ref:active {
 }
 
 .address {
-	margin-right: 33px;
+	margin-right: 30px;
 }
 
 .phone {
-	margin-right: 40px;
+	margin-right: 30px;
 }
 
 .intro-section {
@@ -230,6 +217,18 @@ a.vk-ref:active {
     top: 114px;
 }
 
+.intro-section::after {
+	content: "";
+	position: absolute;
+	width: 85px;
+	height: 85px;
+	border: 16px solid #2429ff;
+	border-radius: 50%; 
+	top: 294px;
+    left: -125px;
+	z-index: 11;
+}
+
 .intro-image {
 	position: absolute;
     z-index: 10;
@@ -239,7 +238,7 @@ a.vk-ref:active {
 
 .intro-wrap {
 	position: relative;
-    max-width: 520px;
+    max-width: 44%;
     padding-top: 220px;
 }
 
