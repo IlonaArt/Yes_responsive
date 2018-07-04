@@ -29,7 +29,6 @@ body {
 	position: relative;
     max-width: 1170px;
 	margin: 0 auto;
-	height: 100%;
 	min-width: 320px;
 	padding: 32px 15px 0 15px;
 }
@@ -148,6 +147,7 @@ a.vk-ref:active {
 
 .headline {
 	font-size: 2.5em;
+	line-height: 52px;
 	color: #000000;
 	text-transform: uppercase;
 }
@@ -196,13 +196,14 @@ a.vk-ref:active {
 .phone {
 	margin-right: 30px;
 }
-
+                                 /* 1 block */
 .intro-section {
 	position: relative;
 	min-height: 794px;
 	display: flex;
     flex-direction: row-reverse;
     width: 100%;
+    margin-bottom: 184px;
 }
 
 .intro-section::before {
@@ -268,6 +269,152 @@ a.vk-ref:active {
 	background-color: #f5112c;
 	bottom: 388px;
 	left: 0;
+}
+
+                                 /* 2 block */
+
+ .question-wrap {
+ 	max-width: 360px;
+ 	position: relative;
+ }           
+
+.question-wrap .question {
+ 	background-image: url(../img/qstn.png);
+ 	background-repeat: no-repeat;
+ 	position: absolute;
+ 	bottom: -25px;
+    left: 253px;
+ 	height: 220px;
+ 	width: 145px;
+ }    
+
+.situations-item.first {
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    margin-bottom: 88px;
+}
+
+.situations-item.first::before {
+	content: "";
+	position: absolute;
+	background-image: url("../img/wave1.png");
+	width: 145px;
+    height: 19px;
+    top: 275px;
+    left: 560px;
+}
+
+ .situations-text.first {
+ 	max-width: 245px;
+ 	margin-right: 20px;
+ }                 
+
+.number.one {
+	position: absolute;
+    top: 67px;
+    right: 422px;
+}
+
+.situations-item.second {
+	display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.situations-item.second::before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 330px;
+	background-color: #e9e9e9;
+	top: -330px;
+    left: 280px;
+}
+
+.situations-item.second::after {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 448px;
+	background-color: #e9e9e9;
+	top: 346px;
+	left: 280px;
+}
+
+ .situations-text.second {
+ 	max-width: 348px;
+ 	margin-left: 40px;
+ 	margin-top: 85px;
+ }
+
+ .number.two {
+ 	position: absolute;
+ 	top: 35px;
+    left: 400px;
+ }
+
+.situations-item.third {
+	display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.situations-item.third::before {
+	content: "";
+    position: absolute;
+    background-color: #2429ff;
+    width: 23px;
+    height: 23px;
+    border: 1px solid #2429ff;
+    border-radius: 50%;
+   	top: 94px;
+    left: 270px;
+}
+
+ .situations-text.third {
+ 	max-width: 342px;
+ 	position: absolute;
+ 	right: 380px;
+    top: 120px;
+ } 
+
+ .situations-item.third .situations-image {
+ 	position: absolute;
+    top: -60px;
+ }
+
+ .number.three {
+ 	position: absolute;
+    top: 87px;
+    right: 302px;
+    z-index: 10;
+ }
+
+ .result {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    position: relative;
+    margin-top: 448px;
+ }
+
+ .result-text {
+ 	max-width: 266px;
+ 	margin-left: 38px;	
+ 	margin-top: 130px;
+ }
+
+.result b {
+	position: absolute;
+	top: 80px;
+    left: 524px;
+}
+
+.situations {
+	margin-bottom: 388px;
 }
 
 .modal {
