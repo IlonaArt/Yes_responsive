@@ -122,7 +122,7 @@ a.vk-ref:active {
 
 .number,
 .result b  {
-	font-size: 2.67em;
+	font-size: 3.67em;
 	color: #000000;
 }
 
@@ -415,6 +415,62 @@ a.vk-ref:active {
 
 .situations {
 	margin-bottom: 388px;
+}
+
+.decision {
+	position: relative;
+	margin-bottom: 248px;
+}
+
+.dcsn-wrap {
+	max-width: 488px;
+	padding-bottom: 132px;
+}
+
+.dcsn-wrap::before {
+	content: "";
+	position: absolute;
+    width: 62px;
+    height: 7px;
+    background-color: #f5112c;
+    top: 134px;
+    left: 0;
+}
+
+.dcsn-list {
+	display: flex;
+}
+
+.dcsn-wrap::after {
+	content: "";
+	position: absolute;
+	background-image: url("../img/wave1.png");
+	width: 145px;
+    height: 19px;
+    bottom: -127px;
+    right: 293px;
+}
+
+.dcsn-image {
+	position: absolute;
+	left: 576px;
+    bottom: -8px;
+}
+
+.dcsn-item:not(:last-child) {
+	padding-right: 55px;
+ }
+
+.dcsn-item-text.one {
+	max-width: 220px;
+}
+
+.dcsn-item-text.two {
+	max-width: 212px;
+}
+
+.dcsn-item-text.three {
+    max-width: 170px;	
 }
 
 .modal {

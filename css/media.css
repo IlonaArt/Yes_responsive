@@ -194,6 +194,52 @@
 	.situations {
 		margin-bottom: 313px;
 	}
+
+	.decision {
+		margin-bottom: 136px;
+	}
+
+	.dcsn-wrap {
+    	max-width: 368px;
+    	padding-bottom: 96px;
+	}
+
+	.dcsn-wrap::before {
+		top: 100px;
+	}
+
+	.dcsn-wrap::after {
+		bottom: -75px;
+    	right: 1px;
+	}
+
+	.dcsn-item-text.one {
+    	max-width: 195px;
+	}
+
+	.dcsn-item-text.two {
+	    max-width: 188px;
+	}
+
+	.dcsn-item-text.three {
+    	max-width: 156px;
+	}
+
+	.dcsn-item-text {
+		padding-top: 10px;
+	}
+
+	.dcsn-image {
+		width: 481px;
+		height: 365px;
+		left: 489px;
+   	 	bottom: 57px;
+	}
+
+	.dcsn-item:not(:last-child) {
+	    padding-right: 40px;
+	}	
+
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
@@ -410,7 +456,9 @@
     	left: 118px;
  	}   
 
-	.situations-item {
+	.situations-item.first,
+	.situations-item.second,
+	.situations-item.third {
 		flex-direction: column;
 	}
 
@@ -418,20 +466,134 @@
  		display: none;
  	}
 
- 	.number.one {
+ 	.number.one,
+ 	.number.two,
+ 	.number.three,
+ 	.result b {
  		position: unset;
- 		padding-bottom: 10px;
+ 		margin-bottom: 12px;
+ 	}
+
+ 	.situations-text {
+	    text-align: center;
+	    margin-bottom: 23px;
  	}
 
  	.situations-text.first {
  		max-width: 188px;
-	    text-align: center;
-	    padding-bottom: 20px;
-	    margin: 0 auto;
+ 		margin: 0 auto;
  	}
 
- 	.situations-item.first .situations-image {
+	.situations-item.first,
+	.situations-item.second {
+		margin-bottom: 40px;
+	}
+
+ 	.situations-item.first .situations-image,
+ 	.situations-item.second .situations-image {
 	    width: 290px;
 	    height: 230px;
+	}
+
+	.situations-item.second {
+		align-items: center;
+	}
+
+	.situations-text.second {
+		max-width: 252px;
+		margin-left: 0;	
+		margin-top: 0;
+	}
+
+	.situations-item.third {
+		margin-bottom: 58px;
+	}
+
+	.situations-text.third {
+	    margin-bottom: 20px;
+	    padding-bottom: 0;
+	    max-width: 260px;
+	}
+
+	.situations-item .situations-image {
+		width: 290px;
+		height: 429px;
+	}
+
+	.result {
+		margin-top: 0;
+		flex-direction: column;
+    	align-items: center;
+	}
+
+	.result-image {
+		width: 290px;
+		height: 153px;
+	}
+
+	.result-text {
+		margin-left: 0;
+		margin-top: 0;
+		max-width: 206px;
+	    text-align: center;
+	    margin-bottom: 23px
+	}	
+
+	.situations {
+	    margin-bottom: 156px;
+	}
+
+	.decision {
+		margin-bottom: 78px;
+	}
+
+	.dcsn-image,
+	.dcsn-wrap::after {
+		display: none;
+	}
+
+	.dcsn-wrap {
+	    text-align: center;
+	    max-width: 254px;
+	    margin: 0 auto;
+	    padding-bottom: 62px;
+	}
+
+	.dcsn-wrap::before {
+		top: 68px;
+		left: 50%;
+    	transform: translateX(-50%);
+	}
+
+	.dcsn-list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.dcsn-item {
+		display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	}
+
+	.dcsn-item:not(:last-child) {
+		padding-right: 0;
+		margin-bottom: 50px;
+	}
+
+	.dcsn-item-text.one {
+		max-width: 170px;
+	}
+
+	.dcsn-item-text.two {
+		max-width: 160px;
+	} 
+
+	.dcsn-item-text.three {
+		max-width: 136px;
+	}
+	
+	.teachers .headline {
+		text-align: center;
 	}
 }
