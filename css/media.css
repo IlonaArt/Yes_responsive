@@ -126,7 +126,7 @@
 
  	.number.one {
  		top: 54px;
-    	right: 378px;
+    	right: 372px;
  	}
 
  	.situations-text.first {
@@ -144,7 +144,7 @@
 	}
 
 	.number.two {
-		left: 318px;
+		left: 316px;
 	}
 
 	.situations-text.second {
@@ -182,7 +182,7 @@
 
 	.result b {
 		top: 30px;
-	    left: 310px;
+	    left: 306px;
 	}
 
 	.result-text {
@@ -239,6 +239,40 @@
 	.dcsn-item:not(:last-child) {
 	    padding-right: 40px;
 	}	
+
+	.teachers-list {
+		flex-wrap: wrap;
+	}
+
+	.teacher-item {
+		display: flex;
+    	flex-direction: column;
+	}
+
+	.teacher-item.two {
+		margin-bottom: 42px;
+	}
+
+	.about-teachers-text.first, 
+	.about-teachers-text.second {
+    	max-width: 278px;
+	}
+
+	.about-teachers-text.third {
+    	max-width: 302px;
+	}
+
+	.teacher-item.three::before {
+		left: 705px;
+    	top: -50px; 
+	}
+
+	.teacher-item.three::after {
+		top: 185px;
+    	left: 675px
+	}
+
+
 
 }
 
@@ -595,5 +629,26 @@
 	
 	.teachers .headline {
 		text-align: center;
+		margin-bottom: 27px;
+	}
+
+	.teacher-image {
+		width: 285px;
+		height: 226px;
+	}
+
+	.teacher-item.three::before,
+	.teacher-item.three::after,
+	.teachers-list::before,
+	.teachers-list::after {
+		display: none;
+	}
+
+	.about-teachers-text {
+		line-height: 18px;
+	}
+
+	.teacher-item:not(:last-child) {
+		margin-bottom: 42px;
 	}
 }
