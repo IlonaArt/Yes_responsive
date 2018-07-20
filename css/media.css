@@ -241,7 +241,9 @@
 	}	
 
 	.teachers-list {
+		justify-content: space-between;
 		flex-wrap: wrap;
+		padding: 0;
 	}
 
 	.teacher-item {
@@ -253,32 +255,34 @@
 		margin-bottom: 42px;
 	}
 
-	.about-teachers-text.first, 
-	.about-teachers-text.second {
-    	max-width: 278px;
+	.teacher-image {
+		width: 344px;
+		height: 274px;
+	}
+
+	.about-teachers-text {
+    	font-size: 0.86em;
+	}
+
+	.about-teachers-text.first {
+		max-width: 312px;
 	}
 
 	.about-teachers-text.third {
-    	max-width: 302px;
+    	max-width: 330px;
 	}
 
-	.teacher-item.three::before {
-		left: 705px;
-    	top: -50px; 
+}
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+	.wrapper {
+		max-width: 62%;
 	}
-
-	.teacher-item.three::after {
-		top: 185px;
-    	left: 675px
-	}
-
-
-
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
 	.wrapper {
-		max-width: 800px;
+		max-width: 62%;
 	}
 
 	.headline {
@@ -630,22 +634,33 @@
 	.teachers .headline {
 		text-align: center;
 		margin-bottom: 27px;
+		font-size: 2em;
+	}
+
+	.teachers-list {
+		justify-content: center;
 	}
 
 	.teacher-image {
 		width: 285px;
-		height: 226px;
-	}
-
-	.teacher-item.three::before,
-	.teacher-item.three::after,
-	.teachers-list::before,
-	.teachers-list::after {
-		display: none;
+		height: 227px;
 	}
 
 	.about-teachers-text {
 		line-height: 18px;
+		font-size: 0.88em;
+	}
+
+	.about-teachers-text.first {
+		max-width: 224px;
+	} 
+
+	.about-teachers-text.second {
+		max-width: 234px;
+	}
+
+	.about-teachers-text.third {
+		max-width: 236px;
 	}
 
 	.teacher-item:not(:last-child) {

@@ -196,7 +196,7 @@ a.vk-ref:active {
 .phone {
 	margin-right: 30px;
 }
-                                 /* 1 block */
+                                      /* 1 block */
 .intro-section {
 	position: relative;
 	min-height: 794px;
@@ -270,10 +270,8 @@ a.vk-ref:active {
 	bottom: 388px;
 	left: 0;
 }
-
-                                 /* 2 block */
-
- .question-wrap {
+                                /* 2 block */
+.question-wrap {
  	max-width: 360px;
  	position: relative;
  }           
@@ -421,7 +419,7 @@ a.vk-ref:active {
 	position: relative;
 	margin-bottom: 248px;
 }
-
+                                                    /*  3 block */
 .dcsn-wrap {
 	max-width: 488px;
 	padding-bottom: 132px;
@@ -472,9 +470,11 @@ a.vk-ref:active {
 .dcsn-item-text.three {
     max-width: 170px;	
 }
-
+                                                 /* 4 block */
 article.teachers {
 	position: relative;
+	background-image: url(../img/block3.png);
+	background-repeat: no-repeat;
 }
 
 .teachers .headline {
@@ -512,11 +512,7 @@ article.teachers {
 }
 
 .teacher-item.one {
-	padding-right: 22px;
-}
-
-.teacher-item.two {
-	padding-right: 12px;
+	padding-right: 8px;
 }
 
 .teacher-item.three {
@@ -530,35 +526,96 @@ article.teachers {
 
 .about-teachers-text.first,
 .about-teachers-text.second {
-	max-width: 328px;
+	max-width: 332px;
 }
 
 .about-teachers-text.third {
 	max-width: 344px;
 }
-
-.teacher-item.three::before {
-	content: "";
-	position: absolute;
-	border: 76px solid #f5f5f5;
-	width: 433px;
-	height: 433px;
-	border-radius: 50%;
-	left: 146px;
-    bottom: 200px;
-    z-index: 9;
+                                              /* 5 block*/
+section.cost {
+	position: relative;
+	display: flex;
+	min-height: 1115px;
 }
 
-.teacher-item.three::after {
+.cost::before {
 	content: "";
 	position: absolute;
-	background-image: url(../img/triple-wave.png);
+	background-image: url("../img/wave1.png");
+	width: 145px;
+    height: 19px;
+    bottom: 0;
+    right: 0;
+}
+
+.cost-image {
+	position: absolute;
+    left: -374px;
+    top: 85px;
+}
+
+.lessons-list {
+	display: flex;
+}
+
+.lessons-col1 {
+	max-width: 315px;
+    margin-right: 52px;
+}
+
+.lessons-col2 {
+	max-width: 328px;
+}
+
+li.lessons-item:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.cost-wrap {
+	max-width: 750px;
+	margin-top: 220px;
+    margin-left: auto;
+}
+
+.cost-col {
+	position: relative;
+	margin-bottom: 40px;
+	z-index: 10;
+}
+
+.cost-col::before {
+	content: "";
+	position: absolute;
+    width: 62px;
+    height: 7px;
+    background-color: #f5112c;
+    top: 80px;
+    left: 0;
+}
+
+.cost-col .question {
+	background-image: url("../img/qstn3.png");
 	background-repeat: no-repeat;
-	width: 66px;
-	height: 34px;
-	top: 156px;
-    left: 523px;
-    z-index: 15;
+ 	position: absolute;
+ 	bottom: 80px;
+    right: 93px;
+ 	height: 220px;
+ 	width: 145px;
+ 	z-index: -1;
+}
+
+.cost-number.headline {
+	margin-top: 75px;
+    text-transform: none;
+}
+
+.lessons-item-text {
+	margin-top: 8px;
+}
+                                            /* 6 block */
+.process {
+	margin-top: 180px;
 }
 
 .modal {
