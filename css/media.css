@@ -378,8 +378,12 @@
 		display: none;
 	}
 
+	.main-header {
+		padding-top: 22px;
+	}
+
 	.wrapper {
-   		padding: 22px 15px 0 15px;
+   		padding: 0 15px;
 	    overflow: auto;	
 	    height: 100%; 
 	    margin: 0 auto;

@@ -30,7 +30,7 @@ body {
     max-width: 1170px;
 	margin: 0 auto;
 	min-width: 320px;
-	padding: 32px 15px 0 15px;
+	padding: 0 15px;
 }
 
 html {
@@ -178,11 +178,11 @@ a.vk-ref:active {
 	text-shadow: 1px 3px 0px rgba(0,0,0,0.5);
 }
 
-.main-header {
+.main-header .wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-    width: 100%;
+	padding-top: 32px;
 }
 
 .address-wrap {
@@ -199,11 +199,11 @@ a.vk-ref:active {
                                       /* 1 block */
 .intro-section {
 	position: relative;
-	min-height: 794px;
+}
+
+.intro-section .wrapper {
 	display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    margin-bottom: 184px;
+    flex-direction: row-reverse
 }
 
 .intro-section::before {
@@ -214,8 +214,8 @@ a.vk-ref:active {
 	height: 23px;
 	border: 1px solid #2429ff;
 	border-radius: 50%; 
-	right: 100px;
-    top: 114px;
+	right: 466px;
+    top: 130px;
 }
 
 .intro-section::after {
@@ -226,14 +226,14 @@ a.vk-ref:active {
 	border: 16px solid #2429ff;
 	border-radius: 50%; 
 	top: 294px;
-    left: -125px;
+    left: 268px;
 	z-index: 11;
 }
 
 .intro-image {
 	position: absolute;
     z-index: 10;
-	bottom: 64px;
+	bottom: -90px;
 	left: 0;
 }
 
@@ -241,6 +241,7 @@ a.vk-ref:active {
 	position: relative;
     max-width: 44%;
     padding-top: 220px;
+    left: -35px;
 }
 
 .intro-wrap::before {
@@ -249,8 +250,8 @@ a.vk-ref:active {
 	background-image: url(../img/wave1.png);
 	width: 145px;
 	height: 19px;
-	bottom: 265px;
-    right: 33px;
+	bottom: 90px;
+    right: 16px;
 }
 
 .intro-text {
@@ -267,14 +268,23 @@ a.vk-ref:active {
 	width: 62px;
 	height: 7px;
 	background-color: #f5112c;
-	bottom: 388px;
+	bottom: 228px;
 	left: 0;
 }
                                 /* 2 block */
 .question-wrap {
  	max-width: 360px;
  	position: relative;
- }           
+ }        
+
+.situations {
+	position: relative;
+	background-image: url("../img/big ellipse.png");
+	background-repeat: no-repeat;
+	background-position-y: -68px;
+    padding-top: 325px;
+    padding-bottom: 288px;
+}    
 
 .question-wrap .question {
  	background-image: url(../img/qstn.png);
@@ -411,18 +421,17 @@ a.vk-ref:active {
     left: 524px;
 }
 
-.situations {
-	margin-bottom: 388px;
-}
-
 .decision {
 	position: relative;
-	margin-bottom: 248px;
+	background: url(../img/part3.png);
+	background-repeat: no-repeat;
+	background-position: 1012px -129px; 
 }
                                                     /*  3 block */
 .dcsn-wrap {
 	max-width: 488px;
-	padding-bottom: 132px;
+	padding-bottom: 144px;
+    padding-top: 100px;
 }
 
 .dcsn-wrap::before {
@@ -431,12 +440,22 @@ a.vk-ref:active {
     width: 62px;
     height: 7px;
     background-color: #f5112c;
-    top: 134px;
-    left: 0;
+    top: 236px;
+    left: 18px;
 }
 
 .dcsn-list {
 	display: flex;
+	position: relative;
+}
+
+.dcsn-item {
+	position: relative;
+	background-image: url(../img/mini-circle.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	padding-left: 20px;
+	padding-top: 20px;
 }
 
 .dcsn-wrap::after {
@@ -447,12 +466,6 @@ a.vk-ref:active {
     height: 19px;
     bottom: -127px;
     right: 293px;
-}
-
-.dcsn-image {
-	position: absolute;
-	left: 576px;
-    bottom: -8px;
 }
 
 .dcsn-item:not(:last-child) {
@@ -471,10 +484,12 @@ a.vk-ref:active {
     max-width: 170px;	
 }
                                                  /* 4 block */
-article.teachers {
+section.teachers {
 	position: relative;
 	background-image: url(../img/block3.png);
 	background-repeat: no-repeat;
+	background-position: 1332px 205px;
+	padding-top: 248px;
 }
 
 .teachers .headline {
@@ -483,6 +498,7 @@ article.teachers {
 
 .teachers-list {
 	display: flex;
+	justify-content: space-between;
 }
 
 .teachers-list::before {
@@ -509,15 +525,11 @@ article.teachers {
 
 .teacher-image {
 	margin-bottom: 20px;
+	width: 100%;
 }
 
-.teacher-item.one {
-	padding-right: 8px;
-}
-
-.teacher-item.three {
-	position: relative;
-	z-index: 10;
+.teacher-item {
+	width: 360px;
 }
 
 .about-teachers-text {
