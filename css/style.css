@@ -547,24 +547,21 @@ section.teachers {
                                               /* 5 block*/
 section.cost {
 	position: relative;
-	display: flex;
 	min-height: 1115px;
+	background-image: url(../img/bigben.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	bottom: -70px;
 }
 
-.cost::before {
+.cost-wrap::before {
 	content: "";
 	position: absolute;
 	background-image: url("../img/wave1.png");
 	width: 145px;
     height: 19px;
-    bottom: 0;
-    right: 0;
-}
-
-.cost-image {
-	position: absolute;
-    left: -374px;
-    top: 85px;
+    bottom: 222px;
+    left: 215px;
 }
 
 .lessons-list {
@@ -586,7 +583,7 @@ li.lessons-item:not(:last-child) {
 
 .cost-wrap {
 	max-width: 750px;
-	margin-top: 220px;
+	padding-top: 140px;
     margin-left: auto;
 }
 
@@ -627,7 +624,212 @@ li.lessons-item:not(:last-child) {
 }
                                             /* 6 block */
 .process {
-	margin-top: 180px;
+	position: relative;
+	background-image: url("../img/big circle.png");
+	background-repeat: no-repeat;
+	background-position: 20px 90px;
+    padding-top: 110px;
+    min-height: 2377px;
+}
+
+.process .headline {
+	max-width: 360px;
+}
+
+.process .headline::after {
+	content: "";
+    position: absolute;
+    width: 62px;
+    height: 7px;
+    background-color: #f5112c;
+    top: 140px;
+    left: 17px;
+}
+
+.process-item {
+	position: relative;
+	margin-bottom: 82px;
+}
+
+.process-item.first::before {
+	content: "";
+	position: absolute;
+	background-image: url("../img/triple-wave.png");
+	background-repeat: no-repeat;
+	width: 66px;
+	height: 34px;
+	top: 32px;
+    right: -32px;
+}
+
+.process-item.second::before {
+	content: "";
+    position: absolute;
+    background-color: #2429ff;
+    width: 23px;
+    height: 23px;
+    border: 1px solid #2429ff;
+    border-radius: 50%;
+    top: -54px;
+    left: 50px;
+}
+
+.process-item.first,
+.process-item.third {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.process-item.second,
+.process-item.forth {
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+	flex-direction: row-reverse;
+}
+
+.process-item.forth::after {
+	content: "";
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    border: 16px solid #2429ff;
+    border-radius: 50%;
+    top: -37px;
+    left: 488px;
+}
+
+.process-item.first .process-col,
+.process-item.third .process-col {
+	padding-left: 40px;
+}
+
+.process-item.second .process-col,
+.process-item.forth .process-col {
+	padding-left: 40px;
+}
+
+.process-item.second .block6-image,
+.process-item.forth .block6-image {
+	padding-right: 30px;
+}
+
+.process-item-text {
+	max-width: 412px;
+}
+
+.process-col {
+	position: relative;
+}
+
+.process-col::before {
+	content: "";
+	position: absolute;
+	background-image: url("../img/arrow.png");
+	background-repeat: no-repeat;
+	width: 13px;
+	height: 9px;
+	top: 8px;
+	left: 0;
+}
+                                           /* 7 block */
+.feedbacks {
+	position: relative;
+    bottom: 262px;
+}
+
+.feedbacks .headline {
+	margin-bottom: 114px;
+}
+
+.feedbacks .headline::after {
+	content: "";
+    position: absolute;
+    width: 62px;
+    height: 7px;
+    background-color: #f5112c;
+    top: 84px;
+    left: 17px;
+}
+
+.feedbacks .wrapper {
+	background-image: url("../img/scroll.png");
+    background-repeat: no-repeat;
+    background-position: 6px 535px;
+    min-height: 548px;
+}
+
+.feedbacks .wrapper::before {
+	content: "";
+	position: absolute;
+	background-color: #e9e9e9;
+	width: 1140px;
+	height: 7px;
+	bottom: 0;
+	left: 16px;
+    z-index: -1;
+}
+
+.feedbacks .wrapper::after {
+	content: "";
+	position: absolute;
+	background-image: url("../img/triple-wave.png");
+	background-repeat: no-repeat;
+	width: 66px;
+	height: 34px;
+	top: 75px;
+    right: -100px;
+}
+
+.feedbacks-col {
+	padding-left: 64px;
+}
+
+.students {
+	display: flex;
+}
+
+.students-text {
+	max-width: 692px;
+	margin-top: 18px;
+    margin-bottom: 18px;
+}
+                                    /* 8 block */
+.promotion {
+	position: relative;
+	background-image: url("../img/airplane1.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.promotion .wrapper {
+	min-height: 686px;
+}
+
+.promo-col {
+	max-width: 436px;
+    position: relative;
+    left: 624px;
+    top: 264px;
+}
+
+.promo-col::before {
+	content: "";
+    position: absolute;
+    width: 62px;
+    height: 7px;
+    background-color: #f5112c;
+    top: 130px;
+    left: 0;
+}
+
+.promo-lesson-text {
+	margin-top: 56px;
+}
+
+.registration {
+	margin-top: 90px;
 }
 
 .modal {
