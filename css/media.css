@@ -349,6 +349,101 @@
 
 	.process {
 		background-image: url("../img/big circle2.png");
+		background-position: 0 110px;
+		min-height: 1860px;
+	}
+
+	.block6-image {
+		height: 209px;
+	    width: 345px;
+	}
+
+	.process-list {
+		margin-top: 142px;
+	}
+	
+	.process-item {
+		margin-bottom: 68px;
+	}
+
+	.process-item-text {
+	    max-width: 273px;
+	    margin-top: 10px;
+	}
+
+	.process-item.second::before,
+	.process-item.first::before {
+		display: none;
+	}
+
+	.process .headline::after {
+		top: 90px;
+	}
+
+	.process-item.forth::after {
+		left: 265px;
+	}
+
+	.feedbacks::after {
+		content: "";
+	    position: absolute;
+	    background-color: #2429ff;
+	    width: 23px;
+	    height: 23px;
+	    border: 1px solid #2429ff;
+	    border-radius: 50%;
+	    top: 16px;
+    	right: 414px;
+	}
+
+	.feedbacks .wrapper::after {
+		top: -105px;
+    	right: -257px;
+	}
+
+	.feedbacks .headline::after {
+		top: 55px;
+	}
+
+	.students img {
+		width: 156px;
+		height: 156px;
+	}
+
+	.feedbacks-col {
+    	padding-left: 35px;
+	}
+
+	.students-text {
+    	max-width: 495px;
+	}
+
+	.feedbacks .wrapper {
+		min-height: 518px;
+		background-position: 6px 505px;
+	}
+
+	.feedbacks .wrapper::before  {
+		width: 723px;
+	}
+
+	.promotion {
+		background-image: url("../img/airplane2.png");
+		bottom: 150px;
+	}
+
+	.promo-col {
+    	max-width: 325px;
+    	left: 395px;
+    	top: 170px;
+	}
+
+	.promo-col::before {
+		top: 100px;
+	}
+
+	.promotion .registration {
+    	margin-top: 25px;
 	}
 }
 
